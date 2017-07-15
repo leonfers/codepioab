@@ -15,7 +15,7 @@ Maykon – Marcos – Leoncio - Leonardo
 * Permita a communicacao entre Advogado e Cliente (Cryptografia).
 * Calendario de audiencia.
 * Link para Projudi.
-* Busca por localizacao.
+* Busca por localizacao, tipo processos , causas ganhas.
 * Criacao de processo com status.
 
 ### Descricao de objetos
