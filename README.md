@@ -1,14 +1,14 @@
 # codepioab
 Repositorio para aplicativo da hackathon OAB
 
-HACKATHON da 1ª Convenção de Direito Eletrônico do Piauí
+#HACKATHON da 1ª Convenção de Direito Eletrônico do Piauí
 
 Maykon – Marcos – Leoncio - Leonardo
 
-Conceito:
+##Conceito:
 “Solucao para auxiliar na conexao entre clientes e escritorios para resolucao de tramites juridicos classisficados como pequenas causas(em especial Direito do Consumidor)”
 	
-MVP –
+##MVP –
 Cadastro de usuarios(Escritorio – Advogados - Clientes) .
 Permita a transferencia de documentos entre Cliente e Escritorio (Cryptografados).
 Permita a exportacao de documentos Cliente e Escritorio (Cryptografados).
@@ -18,7 +18,7 @@ Link para Projudi.
 Busca por localizacao.
 Criacao de processo com status.
 
-Descricao de objetos
+##Descricao de objetos
 Usuario – Clientes Escritorio Advogados
 	Atributos
 	Processos
@@ -28,5 +28,5 @@ Processo
 	Chat
 	Atributos
 Calendario
-	Eventos 
-		Atributos
+	Eventos
+	Atributos
