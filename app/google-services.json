@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "479274128769",
+    "firebase_url": "https://advogram.firebaseio.com",
+    "project_id": "advogram",
+    "storage_bucket": "advogram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479274128769:android:862a8fc961d6f316",
+        "android_client_info": {
+          "package_name": "com.example.leonf.advogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479274128769-tnbojnpk4j7t3vtc54d2b0g0urv8upk0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leonf.advogram",
+            "certificate_hash": "84a3b16e0408dd82715b6a7bef449ba3b76ae0b8"
+          }
+        },
+        {
+          "client_id": "479274128769-bvd271dhvflk8h3p1rvviipm1m9g5he7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3oSgw0nIP5s_EUBI_j38VoLT21peHl4A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479274128769-bvd271dhvflk8h3p1rvviipm1m9g5he7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
