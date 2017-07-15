@@ -18,7 +18,7 @@ public class StartActivity extends AppCompatActivity {
 
         loginButton =(Button)findViewById(R.id.botao_possuiconta);
 
-       /* loginButton.setOnClickListener(new View.OnClickListener() {
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent login_intent = new Intent(StartActivity.this ,LoginActivity.class);
@@ -26,7 +26,7 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(login_intent);
             }
         });
-        */
+
         regbutton =(Button)findViewById(R.id.botao_registro);
         regbutton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,18 +6,70 @@
     android:layout_height="match_parent"
     tools:context="com.example.leonf.advogram.MainActivity">
 
-    <include layout="@layout/appbarlayout" android:id="@+id/mainappbar"></include>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/mainappbar"
+        layout="@layout/appbarlayout"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Main Page!"
-        android:textSize="40dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_width="match_parent"
+        ></include>
+
+
+    <EditText
+        android:id="@+id/NomeProcessoInput"
+        android:layout_width="279dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Nova sala de reuniao"
+        android:inputType="textMultiLine"
+        android:layout_toStartOf="@+id/BotaoCriarSaladeReuniao"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteY="491dp"
+        app:layout_constraintRight_toLeftOf="@+id/BotaoCriarSaladeReuniao"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp" />
+
+    <Button
+        android:id="@+id/BotaoCriarSaladeReuniao"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:text="Button"
+        android:layout_alignTop="@+id/NomeProcessoInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/listadeprocessos"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+
+
+    <ListView
+        android:id="@+id/listadeprocessos"
+        android:layout_width="427dp"
+        android:layout_height="435dp"
+        android:layout_above="@+id/NomeProcessoInput"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mainappbar"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/NomeProcessoInput"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/mainappbar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteY="56dp"
+        tools:layout_editor_absoluteX="164dp" />
+
+
 
 </RelativeLayout>
