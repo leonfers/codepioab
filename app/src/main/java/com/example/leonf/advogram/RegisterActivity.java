@@ -1,10 +1,12 @@
 package com.example.leonf.advogram;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +26,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     //Firebase
 
+    private ProgressDialog mRegProgess;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,8 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mAuth = FirebaseAuth.getInstance();
+
+        mRegProgess = new ProgressDialog(this);
 
         mDisplayName = (TextInputLayout) findViewById(R.id.Name_input);
         mEmail = (TextInputLayout) findViewById(R.id.Email_input);
@@ -41,6 +47,9 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+
+
+
                 String display_name = mDisplayName.getEditText().getText().toString();
                 Log.d("Nome",display_name);
                 String email = mEmail.getEditText().getText().toString();
@@ -48,7 +57,15 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = mPassword.getEditText().getText().toString();
                 Log.d("senha",password);
 
-                register_user(email,password);
+                if(!TextUtils.isEmpty(display_name) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) {
+
+                    mRegProgess.setTitle("Registering user");
+                    mRegProgess.show();
+
+                    register_user(email, password);
+                }else{
+                    Toast.makeText(RegisterActivity.this,"Campos vazios",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -63,11 +80,13 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if (task.isSuccessful()) {
-                            Intent mainIntent = new Intent(RegisterActivity.this,MainActivity.class);
+                            mRegProgess.dismiss();
+                            Intent mainIntent = new Intent(RegisterActivity.this, MainActivity.class);
                             startActivity(mainIntent);
                             finish();
 
                         }else{
+                            mRegProgess.hide();
                             Toast.makeText(RegisterActivity.this, "Ocorreu um erro", Toast.LENGTH_LONG).show();
                         }
 

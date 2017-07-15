@@ -12,11 +12,12 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Start Page!"
-        android:textSize="40dp"
+        android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView" />
     <Button
         android:id="@+id/botao_registro"
         android:layout_width="wrap_content"
@@ -24,5 +25,25 @@
         android:text="@string/Registro_de_usuario"
         android:textSize="60dp"
         />
+
+    <Button
+        android:id="@+id/botao_possuiconta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Possui Conta"
+        android:textSize="60dp"
+        android:layout_below="@+id/botao_registro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="91dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/botao_registro"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="29dp"
+        android:text="TextView" />
 
 </RelativeLayout>
