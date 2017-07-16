@@ -1,14 +1,18 @@
 package com.example.leonf.advogram;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -37,6 +41,28 @@ public class Chat_Room extends AppCompatActivity{
     private Toolbar mtoolbar;
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_chat , menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+
+        if (item.getItemId() == R.id.cahtCalendario){
+            Intent calendarIntent = new Intent(Chat_Room.this,CalendarActivity.class);
+            startActivity(calendarIntent);
+
+        }if(item.getItemId() == R.id.chatBusca) {
+            Intent buscaIntent = new Intent(Chat_Room.this, LocationActivity.class);
+            startActivity(buscaIntent);
+        }
+        return true;
+    }
 
 
 
@@ -82,6 +108,8 @@ public class Chat_Room extends AppCompatActivity{
 
             }
         });
+
+
 
         root.addChildEventListener(new ChildEventListener() {
             @Override
