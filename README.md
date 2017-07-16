@@ -1,4 +1,5 @@
- 
+
+
 # codepioab
 Repositorio para aplicativo da hackathon OAB
 
@@ -48,5 +49,13 @@ Tecnologia Baseada em sistema de menssagens.
 	*  Autenticacao
 * Editor de texto
 * API google Maps
+
+### Agenda do Projeto:
+	https://trello.com/b/p0fYgxP2/codepi
+
+### CONTATO :
+
+Leoncio Ferreira :
+	leonfersn@gmail.com
 
 
