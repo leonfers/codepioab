@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Advogram.iml" filepath="$PROJECT_DIR$/Advogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codepi.iml" filepath="$PROJECT_DIR$/Codepi.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
