@@ -13,7 +13,7 @@ Maykon(Advogado) – Marcos(Designer) – Leoncio(Programador) - Leonardo(Progra
 Solucao para auxiliar na conexao entre clientes e escritorios para resolucao de tramites juridicos classisficados como pequenas causas
 (em especial Direito do Consumidor), focando especialmente em manter a comunicacao objetiva e profissional durante o processo.
 
-Tecnologia Baseada em sistema de menssagens.
+Tecnologia Baseada em sistema de menssageiro.
 
 ### Prototipo:
 	
