@@ -2,4 +2,5 @@
     <string name="app_name">Advogram</string>
     <string name="Registro_de_usuario">"Registro de usuario"</string>
     <string name="auth_failed">FAIL</string>
+    <string name="title_activity_location">Map</string>
 </resources>

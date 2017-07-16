@@ -142,6 +142,11 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.mainloggout) {
             FirebaseAuth.getInstance().signOut();
             updatePage();
+        }else
+        if (item.getItemId() == R.id.app_bar_search){
+            Intent searchIntent = new Intent(MainActivity.this,LocationActivity.class);
+            startActivity(searchIntent);
+
         }
         return true;
     }

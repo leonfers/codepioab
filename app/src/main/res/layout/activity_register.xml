@@ -20,7 +20,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:hint="Email@email.com" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -38,7 +38,7 @@
             android:id="@+id/texto_input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Passaword" />
+            android:hint="Senha" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -73,6 +73,6 @@
             android:id="@+id/texto_input_nome"
             android:layout_width="match_parent"
             android:layout_height="58dp"
-            android:hint="Display Name" />
+            android:hint="Nome do Usuario" />
     </android.support.design.widget.TextInputLayout>
 </android.support.constraint.ConstraintLayout>
