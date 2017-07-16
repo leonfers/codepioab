@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".StartActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".Chat_Room" />
         <activity android:name=".LoginActivity"></activity>
     </application>
 

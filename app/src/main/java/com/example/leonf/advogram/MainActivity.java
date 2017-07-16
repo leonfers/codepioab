@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 Map<String,Object> map = new HashMap<String,Object>();
                 map.put(nomenovasala.getText().toString(),"");
                 root.updateChildren(map);
+                nomenovasala.setText("");
             }
         });
 
@@ -101,15 +103,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        listView.setOnItemClickListener(new AdapterView<?>.OnItemClickListener(){
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Intent intent = new Intent(getApplicationContext(),Chat_Room.class);
-                intent.putExtra("room_name",((TextView)View).getText().toString());
+                intent.putExtra("room_name",((TextView)view).getText().toString());
+
 
                 FirebaseUser currentUser = autenticador.getCurrentUser();
-                intent.putExtra("user_name",currentUser.getDisplayName());
+
+
+
+                intent.putExtra("user_name",currentUser.getEmail());
                 startActivity(intent);
             }
 

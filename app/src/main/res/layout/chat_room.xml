@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/chatappbar"
+        layout="@layout/appbarlayout"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_width="match_parent"
+        ></include>
+
+    <Button
+        android:id="@+id/botaodeenvio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/inputdemsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/botaodeenvio"
+        android:layout_marginEnd="32dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/botaodeenvio"
+        android:id="@+id/scrolldemsg"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/chatappbar">
+        <TextView
+            android:id="@+id/mensagens"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="19dp"
+            />
+    </ScrollView>
+</RelativeLayout>
