@@ -1,12 +1,20 @@
+
 # codepioab
 Repositorio para aplicativo da hackathon OAB
 
 # HACKATHON da 1ª Convenção de Direito Eletrônico do Piauí
 
-Maykon – Marcos – Leoncio - Leonardo
+### Equipe
+Maykon(Advogado) – Marcos(Designer) – Leoncio(Programador) - Leonardo(Programador)
 
 ### Conceito:
-“Solucao para auxiliar na conexao entre clientes e escritorios para resolucao de tramites juridicos classisficados como pequenas causas(em especial Direito do Consumidor)”
+“Solucao para auxiliar na conexao entre clientes e escritorios para resolucao de tramites juridicos classisficados como pequenas causas(em especial Direito do Consumidor), focando especialmente em manter a comunicacao objetiva e profissional durante o processo.”
+
+Tecnologia Baseada em sistema de menssagens.
+
+### Prototipo:
+	
+	Sistema capaz de cadastar usuarios e autenticar por login, enviar mensagens entre usuario , criacao de salas de reuniao e busca de localizacao dentro do app.
 	
 ### MVP –
 * Cadastro de usuarios(Escritorio – Advogados - Clientes) .
@@ -30,3 +38,13 @@ Maykon – Marcos – Leoncio - Leonardo
 * Calendario
 	* Eventos
 	* Atributos
+
+### Recurso ultilizados:
+*Android Studio (Sdk 24 , 23)
+*Firebase (assisnatura spark - gratuita)
+	* Modulos Database
+	* Autenticacao
+*Editor de texto
+*API google Maps
+
+
