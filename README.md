@@ -1,4 +1,4 @@
-
+ 
 # codepioab
 Repositorio para aplicativo da hackathon OAB
 
@@ -42,11 +42,11 @@ Tecnologia Baseada em sistema de menssagens.
 	* Atributos
 
 ### Recurso ultilizados:
-*Android Studio (Sdk 24 , 23)
-*Firebase (assisnatura spark - gratuita)
-	* Modulos Database
-	* Autenticacao
-*Editor de texto
-*API google Maps
+* Android Studio (Sdk 24 , 23)
+* Firebase (assisnatura spark - gratuita)
+	*  Modulos Database
+	*  Autenticacao
+* Editor de texto
+* API google Maps
 
 
